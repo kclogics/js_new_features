@@ -53,4 +53,18 @@ __proto__: Promise
   if the function fails await throws the rejection value 
   
   
+   var return123 = async () => {
+    return 123
+}
+undefined
+var executingFunction = async() => { 
+    let result = await return123();
+    console.log(result);
+}
+undefined
+executingFunction();
+VM27239:3 123
+Promise {<resolved>: undefined}__proto__: Promise[[PromiseStatus]]: "resolved"[[PromiseValue]]: undefined
+  
+  
   

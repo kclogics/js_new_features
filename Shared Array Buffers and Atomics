@@ -24,3 +24,16 @@
   
   
   
+  
+  
+  + Sharing Data
+    > Structured Data
+    > Transferables
+    > SharedArrayBuffer
+  
+
+  >>> Array Buffer
+      let buffer = new ArrayBuffer(4);
+  
+  >>> Typed Buffer
+      

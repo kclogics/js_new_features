@@ -1,3 +1,11 @@
+
++"includes" function on every array
++checks if an arrary contains a specified value
++Return a boolean
++previously the way to find the value was to use indexOf
+ (Array.proptype.indexOf)
+
+
 let numbers = [1,2,3,4];
 undefined
 let moreNumbers = new Array(1,2,3,4);
@@ -17,6 +25,7 @@ VM661:1 Uncaught TypeError: moreNumbers.count is not a function
 (anonymous) @ VM661:1
 
 
+
 console.log(numbers.count());
 VM751:1> 4
 undefined
@@ -26,6 +35,9 @@ console.log(moreNumbers.count());
 VM931:1 Uncaught TypeError: moreNumbers.count is not a function
     at <anonymous>:1:25
 (anonymous) @ VM931:1
+
+
+-------------------------------------------------------------------------------------------
 Array.prototype.count = function() { return this.length; }
 ƒ () { return this.length; }
 

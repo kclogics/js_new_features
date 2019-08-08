@@ -108,3 +108,25 @@ VM4508:1 Uncaught SyntaxError: missing ) after argument list
 console.log(selectedRides1.includes(rides));
 VM4528:1 true
 undefined
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+var someArray = [34, 45, NaN]
+undefined
+
+
+console.log(someArray.includes(NaN));
+VM5652:1 true
+undefined
+
+
+console.log(someArray.indexOf(NaN >= 0));
+VM5760:1 -1
+
+-------------------------------------------------------------------------------------------------------
+
+

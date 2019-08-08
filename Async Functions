@@ -13,3 +13,8 @@
   >>> Promise.all takes multiple promises and returns a promise which resolves when all supplied promises are done.
   
   >>> Promise.race works the same. it resolves when the first promise is done.
+
+ + async
+   > keyword to add to function declaration
+   > Everything you return from that function will be wraped in a resolved promise
+   > If you throw in the function the promise will return in the rejected state.

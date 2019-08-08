@@ -44,3 +44,67 @@ Array.prototype.count = function() { return this.length; }
 
 console.log(moreNumbers.count());
 VM1008:1> 4
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+let rides = ["javascript", "es6", "es7" ,"es8"];
+undefined
+
+let selectedRide = "es9";
+undefined
+
+console.log(rides.includes(selectedRide));
+VM3319:1 false
+undefined
+
+console.log(rides.includes("es9"));
+VM3399:1 false
+undefined
+
+
+console.log(rides.indexOf(selectedRide >= 0)); // if false give u negative value
+VM3534:1 -1
+undefined
+
+
+
+
+let selectedRides = [rides];
+undefined
+
+
+console.log(selectedRides);
+VM3917:1 [Array(4)]0: (4) ["javascript", "es6", "es7", "es8"]length: 1__proto__: Array(0)
+undefined
+
+
+let selectedRides1 = [rides, {name: 'scooby js'}];
+undefined
+
+
+console.log(selectedRides1);
+VM4178:1 (2) [Array(4), {…}]0: (4) ["javascript", "es6", "es7", "es8"]1: {name: "scooby js"}length: 2__proto__: Array(0)
+undefined
+
+
+console.log(rides.includes({name: 'scooby js'));
+VM4324:1 Uncaught SyntaxError: Unexpected token )
+console.log(rides.includes({name: 'scooby js'}));
+VM4346:1 false
+undefined
+
+
+console.log(selectedRides1.includes({name: 'scooby js'}));
+VM4401:1 false
+undefined
+
+
+console.log(selectedRides1.includes(rides);
+VM4508:1 Uncaught SyntaxError: missing ) after argument list
+console.log(selectedRides1.includes(rides));
+VM4528:1 true
+undefined

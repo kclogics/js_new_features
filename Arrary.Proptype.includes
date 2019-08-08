@@ -1,0 +1,34 @@
+let numbers = [1,2,3,4];
+undefined
+let moreNumbers = new Array(1,2,3,4);
+undefined
+numbers.count = function() { return this.length; }
+ƒ () { return this.length; }
+
+
+console.log(numbers.count());
+VM568:1> 4
+undefined
+
+
+console.log(moreNumbers.count());
+VM661:1 Uncaught TypeError: moreNumbers.count is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM661:1
+
+
+console.log(numbers.count());
+VM751:1> 4
+undefined
+
+
+console.log(moreNumbers.count());
+VM931:1 Uncaught TypeError: moreNumbers.count is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM931:1
+Array.prototype.count = function() { return this.length; }
+ƒ () { return this.length; }
+
+
+console.log(moreNumbers.count());
+VM1008:1> 4

@@ -10,3 +10,6 @@
   > Chainable
   > part of es2015 aka es6
                
+  >>> Promise.all takes multiple promises and returns a promise which resolves when all supplied promises are done.
+  
+  >>> Promise.race works the same. it resolves when the first promise is done.

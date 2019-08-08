@@ -1,1 +1,6 @@
-+ CallBacks: A function supplied as a parameter to a function
++ CallBacks:   
+  > A function supplied as a parameter to a function
+  > The function will execute it when it's complete
+  
+
+               

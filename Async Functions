@@ -42,3 +42,15 @@ Promise {<resolved>: undefined}
 __proto__: Promise
 [[PromiseStatus]]: "resolved"
 [[PromiseValue]]: undefined
+
+
++ await
+  > keyword to add to a call to a function that returns a promise
+  > only works inside an async function
+  it makes sure the promise is done before continuing the async function
+  (all other functions that might run are continuing)
+  >if the function executes succesfully the result of await is the return value of the function called 
+  if the function fails await throws the rejection value 
+  
+  
+  

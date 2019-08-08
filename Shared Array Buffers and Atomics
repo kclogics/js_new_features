@@ -1,2 +1,26 @@
 + Web Workers
   > Bring task parallelism to javascript
+  > conceived by W3c
+  > started by main thread
+  > Each worker has its own global environment
+  > Nothing is shared between main thread and worker thread
+  > Can do all kinds of tasks as long as it doesn't involve the DOM
+  
+  >>> using a web worker
+  
+  let worker = new Worker("someTask.js");
+  worker.postMessage(workOnThisData);
+  worker.onMessage = (event) => {
+  // process data posted back by worker in event.data
+  }
+
+ >>> inside the web worker
+ 
+ self.addEventListner('message',(event) => {
+  // get event.data == posted data by main thread
+  // process data
+  self.postMessage(processData);
+  });
+  
+  
+  

@@ -2,5 +2,11 @@
   > A function supplied as a parameter to a function
   > The function will execute it when it's complete
   
-
++ Promises
+  > Placeholder object of the eventual result
+  > when resolved it makes the result available
+  > Handles workflow
+  > promise can have three states: Pending, Fulfilled, Rejected
+  > Chainable
+  > part of es2015 aka es6
                

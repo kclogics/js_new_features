@@ -18,3 +18,27 @@
    > keyword to add to function declaration
    > Everything you return from that function will be wraped in a resolved promise
    > If you throw in the function the promise will return in the rejected state.
+   
+   
+var return123 = async () => {
+    return 123
+}
+ 
+console.log(return123());
+VM24848:1 
+Promise {<resolved>: 123}
+__proto__: Promise
+[[PromiseStatus]]: "resolved"
+[[PromiseValue]]: 123
+undefined
+ 
+ 
+ 
+return123().then(result => {
+    console.log(result)
+})
+VM25099:2 123
+Promise {<resolved>: undefined}
+__proto__: Promise
+[[PromiseStatus]]: "resolved"
+[[PromiseValue]]: undefined
